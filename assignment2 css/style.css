@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('/img/maxresdefault.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+ /*  transparency for header */
+  header {
+    background-color: rgba(74, 85, 104, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  main {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #f4f4f4;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6);
+  }
+
+  section {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .album-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  footer {
+    background-color: rgba(8, 10, 11, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* font styling */
+  .verse {
+    font-style: italic;
+    color: #a4c3f1;
+    font-size: 1.3rem;
+  }
+
+  .chorus {
+    font-weight: bold;
+    color: #d35400;
+    font-size: 1.4rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .outro {
+    font-style: italic;
+    color: #f1c40f;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  /* text animate */
+  section p {
+    animation: fadeIn 2s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* audio player */
+  #music_control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+  }
+
+  .audio-player {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+ 
+  }
+
+  audio {
+    width: 100%;
+    margin-left: 20%;
+
+  }
+
+  /* responsive design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    .chorus {
+      font-size: 1.2rem;
+    }
+  }
