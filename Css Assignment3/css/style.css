@@ -1,0 +1,283 @@
+html{scroll-behavior: smooth;}
+
+body{
+margin: 0;
+background-color: #f8f8f8;
+}
+
+/* basic font styling */
+h1, h2, h3, h4, h5, h6{
+font-family: "Poppins", sans-serif;
+}
+p,a,li,lable, figcaption, td{
+font-family: "Lato", sans-serif;
+font-size: 1.2em;
+text-decoration: none;
+
+}
+
+/* header */
+
+header{
+
+width: 100%;
+height: 125px;
+display: flex;
+align-items: center;
+background-color: #f8f8f8;
+position: fixed;
+z-index: 9999;
+
+}
+header div{
+    width: auto;
+    height: 115px;
+    flex-grow: 1;
+    }
+header img{
+    width: auto;
+    height: 100%;
+    }
+header menu{
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    list-style: none;
+    }
+header li{
+    padding: 0 10px;
+    }
+header li a{
+    color: #0e0e0e;
+}
+.home-page {   
+    background-image: url("../image/");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+    .masthead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    }
+
+    .masthead h1{
+    color: #ffffff;
+    text-shadow: 4px 3px 3px rgba(0,0,0,.8);
+    font-size: 5em; 
+    padding: 15px;
+    }
+    
+    .dark-solid-lesson-row-{
+    background-color: #0e0e0e;
+    color: #f8f8f8;
+    padding: 5%;
+    }
+        
+        
+    .small-image-row-1{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 450px;
+     background-image: url("../images/71RWTiGTJRL._AC_.jpg");
+     background-size: cover;
+     background-attachment: fixed;
+      }
+     
+    .small-image-row-1 h3{
+    font-size: 3.5em;
+    color: #f8f8f8;
+    text-shadow: 4px 3px 3px rgba(0,0,0,.9);
+      }
+
+      .light-solid-lesson-row{
+
+        background-color: #f8f8f8;
+        
+        color: #0e0e0e;
+        
+        padding: 2% 5%;
+        
+        }
+        
+        .small-image-row-2 {
+        
+        display: flex;
+        
+        align-items: center;
+        
+        justify-content: center;
+        
+        height: 450px;
+        
+        background-image: url("../images/103631266-kingsize2.jpg");
+        
+        background-size: cover;
+        
+        background-position: center;
+        
+        background-repeat: no-repeat;
+        
+        background-attachment: fixed;
+        }
+
+        
+        .small-image-row-2 h3{
+        font-size: 3.5em;
+        color: #f8f8f8;
+        text-shadow: 4px 3px 3px rgba(0,0,0,.8);
+        }
+        
+        .full-image-row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        }
+        
+        .full-image-row h3{
+        
+        background-color: none;
+        color: #f8f8fB;
+        text-shadow: 4px 3px 3px rgba(0,0,0,.8);
+        font-size: 5em;
+        padding: 15px;
+        
+        }
+        /*offer css*/
+        .offer-highlight {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            text-align: center;
+            padding: 2.5rem 1rem;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+          }
+          
+          .offer-container h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+          }
+          
+          .offer-container p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+          }
+          
+          .offer-btn {
+            background-color: #fff;
+            color: #e60073;
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease, color 0.3s ease;
+          }
+          
+          .offer-btn:hover {
+            background-color: #e60073;
+            color: #fff;
+          }
+          
+
+
+        /* table*/
+        .nutrition-section {
+            padding: 2rem;
+            background-color: #fff4f8;
+          }
+          
+          .nutrition-table {
+            max-width: 700px;
+            margin: 0 auto;
+          }
+          
+          .nutrition-table table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-family: 'Poppins', sans-serif;
+          }
+          
+          .nutrition-table th,
+          .nutrition-table td {
+            border: 1px solid #ddd;
+            padding: 0.75rem;
+            text-align: left;
+          }
+          
+          .nutrition-table thead {
+            background-color: #ffb6c1;
+          }
+          
+          .nutrition-table th {
+            font-weight: 600;
+          }
+          
+          .nutrition-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+          }
+          
+          .disclaimer {
+            font-size: 0.85rem;
+            margin-top: 1rem;
+            color: #555;
+          }
+          
+
+
+
+
+
+        .contact-footer {
+            background-color: #f0f0f0;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 2rem;
+            flex-wrap: wrap;
+          }
+          
+          .footer-content {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+          }
+          
+          .footer-logo img {
+            max-width: 150px;
+          }
+          
+          .contact-form {
+            flex: 1;
+            min-width: 250px;
+          }
+          
+          .contact-form h3 {
+            margin-bottom: 1rem;
+          }
+          
+          .contact-form input,
+          .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+          }
+          
+          .contact-form button {
+            padding: 0.6rem 1.2rem;
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          
