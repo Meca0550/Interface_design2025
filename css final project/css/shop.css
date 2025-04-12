@@ -1,0 +1,129 @@
+/*SHOP PAGE STYLE*/
+
+.shop-main {
+    padding-bottom: 80px;
+}
+
+.shop-hero {
+    background-color: var(--secondary);
+    color: var(--white);
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 40px;
+}
+
+.shop-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.shop-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.results-count {
+    font-weight: 600;
+}
+
+.sort-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sort-options select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: var(--body-font);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product-card {
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+}
+
+.product-image {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wishlist-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ccc;
+    transition: var(--transition);
+}
+
+.wishlist-btn:hover,
+.wishlist-btn.active {
+    color: #ff6b6b;
+}
+
+/* Responsive Grid */
+@media (max-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-controls {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-image {
+        height: 250px;
+    }
+}
